@@ -1,2 +1,2 @@
-# IDEA9103_lkle7577
-Individual component of IDEA9103 code 
+# IDEA1903_Group-A
+IDEA1903 Group A - Creative Coding Major Project
