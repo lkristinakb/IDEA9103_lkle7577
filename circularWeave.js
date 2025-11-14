@@ -11,6 +11,7 @@ function drawWeaves(){
 
   push();
   translate(width / 2, height / 2);
+  rotate(PI/4);
 
   for (let c = -1; c <= (colWeaves+1); c++) {
     for (let r=-1; r <= (rowWeaves+1); r++){
@@ -24,7 +25,6 @@ function drawWeaves(){
     }
   }
   pop();
-  rotate(frameCount*15);
 }
 
 class Weave {

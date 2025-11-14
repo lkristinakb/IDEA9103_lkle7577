@@ -1,18 +1,15 @@
 
 
 let img;
-
 let weaves = [];
-let weaveSpacing = 6;
-
 let threadingWorms = [];
 let threadingWormsImg;
+let weaveSpacing = 6;
 let spacing = 12;
-
 let morphDuration = 150;
-
 let lineImg;
 let lineSystem;
+//let trails = [];
 
 function preload() {
   img = loadImage('assets/KT_Pathway_Avenue.jpg');
