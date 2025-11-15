@@ -68,12 +68,12 @@ class ThreadingWorm {
     graphics.circle(this.curX, this.curY, size);
 
     // optional orbiting red satellite for each dot
-    const orbitAngle = this.idx * 5 + scaling * 30;
+    /*const orbitAngle = this.idx * 5 + scaling * 30;
     const orbitRadius = 10 + sin(this.idx * 2 + scaling * 100) * 5;
     const orbitX = this.curX + cos(orbitAngle) * orbitRadius;
     const orbitY = this.curY + sin(orbitAngle) * orbitRadius;
 
     graphics.fill(255, 0, 0);
-    graphics.circle(orbitX, orbitY, 3);
+    graphics.circle(orbitX, orbitY, 3);*/
   }
-};
+}

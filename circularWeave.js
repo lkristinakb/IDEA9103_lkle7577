@@ -1,4 +1,5 @@
 
+
 function drawWeaves(){
   weaves = [];
   
@@ -10,18 +11,17 @@ function drawWeaves(){
   let radius = (min(spacingX, spacingY)/2);
 
   push();
-  translate(width / 2, height / 2);
-  rotate(PI/4);
 
   for (let c = -1; c <= (colWeaves+1); c++) {
     for (let r=-1; r <= (rowWeaves+1); r++){
 
       let offsetX = (r%2) * spacingX/2;
 
-      let x = spacingX * c + offsetX;
-      let y = spacingY * r;
+      let x = (c - colWeaves/2)* spacingX + offsetX;
+      let y = (r - rowWeaves /2)* spacingY;
 
-      weaves.push(new Weave(x,y,radius * random(0.8,1.2))); // Add each weave object to the array             
+      weaves.push(new Weave(x,y,radius * random(0.7,1.1))); // Add each weave object to the array
+      
     }
   }
   pop();
