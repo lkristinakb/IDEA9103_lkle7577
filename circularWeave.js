@@ -1,5 +1,4 @@
 
-
 function drawWeaves(){
   weaves = [];
   
@@ -21,7 +20,7 @@ function drawWeaves(){
       let y = (r - rowWeaves /2)* spacingY;
 
       weaves.push(new Weave(x,y,radius * random(0.7,1.1))); // Add each weave object to the array
-      
+
     }
   }
   pop();
@@ -101,3 +100,4 @@ class Weave {
     }
   }
 }
+

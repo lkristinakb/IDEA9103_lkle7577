@@ -38,10 +38,10 @@ function drawFlowField() {
       let offsetY = map(noise(x * 0.01 + 100, y * 0.01 + 100, frameCount * 0.01), 0, 1, -3, 3);
 
       // Animate size with sine wave for pulsating effect
-      let size = baseSize + sin(frameCount * 0.05 + (x + y) * 0.01) *30;
+      let size = baseSize + sin(frameCount * 0.05 + (x + y) * 0.01) *80;
 
       // As the morph animation progresses, the circles fade in smoothly from invisible to fully visible
-      let alpha = lerp(0, 255, progress);
+      let alpha = lerp(0, 200, progress);
 
       // Draw coloured circle at x & y with offsets
       noStroke();
